@@ -35,16 +35,15 @@ export default defineConfig({
           title: 'My Cloudflare deploys',
           sites: [
             {
-              title: 'Sanity Studio',
-              apiId: 'xxxxx-yyyy-zzzz-xxxx-yyyyyyyy',
-              buildHookId: 'xxxyyyxxxyyyyxxxyyy',
-              name: 'sanity-gatsby-blog-20-studio',
+              title: 'Staging',
+              deployHook:
+                'https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/xxxxx-yyyy-zzzz-xxxx-yyyyyyyy',
+              url: 'https://stagign.my-sanity-deployment.com',
             },
             {
-              title: 'Website',
-              apiId: 'yyyyy-xxxxx-zzzz-xxxx-yyyyyyyy',
-              buildHookId: 'yyyyxxxxxyyyxxdxxx',
-              name: 'sanity-gatsby-blog-20-web',
+              title: 'Production',
+              deployHook:
+                'https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/xxxxx-yyyy-zzzz-xxxx-yyyyyyyy',
               url: 'https://my-sanity-deployment.com',
             },
           ],
