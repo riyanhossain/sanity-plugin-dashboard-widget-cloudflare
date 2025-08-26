@@ -1,4 +1,4 @@
-# Sanity Dashboard Widget: Netlify
+# Sanity Dashboard Widget: Cloudflare
 
 > This is a **Sanity Studio v3** plugin.
 
