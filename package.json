@@ -90,5 +90,11 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "browserslist": "extends @sanity/browserslist-config",
+  "sanityPlugin": {
+    "verifyPackage": {
+      "babelConfig": false
+    }
   }
 }
