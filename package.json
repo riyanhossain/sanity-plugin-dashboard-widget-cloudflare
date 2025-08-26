@@ -1,0 +1,78 @@
+{
+  "name": "sanity-plugin-dashboard-widget-cloudflare",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "sanity",
+    "sanity-plugin"
+  ],
+  "homepage": "https://github.com/riyanhossain/sanity-plugin-dashboard-widget-cloudflare#readme",
+  "bugs": {
+    "url": "https://github.com/riyanhossain/sanity-plugin-dashboard-widget-cloudflare/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/riyanhossain/sanity-plugin-dashboard-widget-cloudflare.git"
+  },
+  "license": "MIT",
+  "author": "Riyan Hossain <mehraabriyan@gmail.com>",
+  "sideEffects": false,
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "sanity.json",
+    "src",
+    "v2-incompatible.js"
+  ],
+  "scripts": {
+    "build": "plugin-kit verify-package --silent && pkg-utils build --strict --check --clean",
+    "format": "prettier --write --cache --ignore-unknown .",
+    "link-watch": "plugin-kit link-watch",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build",
+    "watch": "pkg-utils watch --strict"
+  },
+  "dependencies": {
+    "@sanity/incompatible-plugin": "^1.0.5",
+    "@sanity/ui": "^3.0.7"
+  },
+  "devDependencies": {
+    "@sanity/dashboard": "^4.1.4",
+    "@sanity/pkg-utils": "^8.0.7",
+    "@sanity/plugin-kit": "^4.0.19",
+    "@types/react": "^19.1.11",
+    "@typescript-eslint/eslint-plugin": "^8.41.0",
+    "@typescript-eslint/parser": "^8.41.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-sanity": "^7.1.4",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "sanity": "^4.5.0",
+    "styled-components": "^6.1.19",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "@sanity/dashboard": "^4.1.4",
+    "react": "^19",
+    "sanity": "^4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
