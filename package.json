@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@sanity/dashboard": "^4.1.4",
-    "@sanity/pkg-utils": "^8.0.7",
+    "@sanity/pkg-utils": "^6.13.4",
     "@sanity/plugin-kit": "^4.0.19",
     "@types/react": "^19.1.11",
     "@typescript-eslint/eslint-plugin": "^8.41.0",
