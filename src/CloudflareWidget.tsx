@@ -3,11 +3,12 @@ import {Flex, Button, Text, Stack, Box} from '@sanity/ui'
 import {WidgetOptions} from './types'
 import {handleDeploy} from './deploy'
 
-export default function cloudflareDeployWidget(config: WidgetOptions) {
+export default function CloudflareWidget(config: WidgetOptions) {
+  let {title, sites} = config
   return (
-    <DashboardWidgetContainer header="Cloudflare Deployments">
+    <DashboardWidgetContainer header={title || 'Cloudflare Deploys'}>
       <Stack as="ul" space={2}>
-        {config.sites.map((site, index) => {
+        {sites.map((site, index) => {
           return (
             <Flex as="li" key={`site-${index}`}>
               <Box flex={1} paddingY={2} paddingX={3}>

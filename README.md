@@ -24,7 +24,7 @@ Add it as a widget to @sanity/dashboard plugin in sanity.config.ts (or .js):
 
 ```js
 import {dashboardTool} from '@sanity/dashboard'
-import {cloudflareWidget} from 'sanity-plugin-dashboard-widget-netlify'
+import {cloudflareWidget} from 'sanity-plugin-dashboard-widget-cloudflare'
 
 export default defineConfig({
   // ...
@@ -59,12 +59,10 @@ export default defineConfig({
 
 `title` - Override the widget default title
 
-`sites[]` - Your Netlify sites to show deploys for
+`sites[]` - Your Cloudflare sites to show deploys for
 
-- `apiId`- The Netfliy API ID of your site (see _Site Settings > General > Site Details > Site Information -> API ID_).
-- `buildHookId` - The id of a build hook you have created for your site within the Netlify administration panel (see _Site Settings > Build & Deploy > Continuous Deployment -> Build Hooks_).
-- `name` - The Netlify site name
 - `title` - Override the site name with a custom title
+- `deployHook` - The id of a build hook you have created for your site within the Cloudflare administration panel.
 - `url` - The url.
 
 ## License

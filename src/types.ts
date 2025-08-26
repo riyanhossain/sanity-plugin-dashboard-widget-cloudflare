@@ -5,5 +5,6 @@ export interface WidgetOptionSite {
 }
 
 export interface WidgetOptions {
+  title?: string
   sites: WidgetOptionSite[]
 }
