@@ -7,13 +7,19 @@ export const handleDeploy = async (site: WidgetOptionSite) => {
   }
 
   try {
-    await fetch(site.deployHook, {
+    const response = await fetch(site.deployHook, {
       method: 'POST',
       mode: 'no-cors',
       cache: 'no-cache',
     })
+
+    if (!response.ok) {
+      throw new Error('Failed to trigger deployment')
+    }
+    
+    alert('Deployment triggered successfully!')
   } catch (error) {
     alert('Error triggering deployment:')
   }
-  alert('Deployment triggered successfully!')
+
 }
