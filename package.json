@@ -1,13 +1,14 @@
 {
   "name": "sanity-plugin-dashboard-widget-cloudflare",
   "version": "1.0.4",
-  "description": "",
+  "description": "Sanity Studio Dashboard Widget for triggering Cloudflare builds.",
   "keywords": [
     "sanity",
     "sanity-plugin",
     "cloudflare",
     "widget",
-    "dashboard"
+    "dashboard",
+    "plugin"
   ],
   "homepage": "https://github.com/riyanhossain/sanity-plugin-dashboard-widget-cloudflare#readme",
   "bugs": {
